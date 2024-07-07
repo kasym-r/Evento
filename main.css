@@ -7,6 +7,11 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: darken;
     background-position-y: -150px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: hidden;
+    margin: 0;
 }
 
 @keyframes fade-in {
@@ -31,6 +36,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     animation: fade-in 0.5s;
+    padding-top: 10px;
 }
 
 .logo {
@@ -64,6 +70,7 @@ body {
 .main {
     text-align: center;
     margin-top: 110px;
+    animation: fade-in 0.5s 0.1s backwards;
 }
 
 .heading {
@@ -136,4 +143,28 @@ body {
     cursor: pointer;
     background-color: #161616;
     color: white;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    font-size: 12px;
+    padding-bottom: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    animation: fade-in 0.5s 0.2s backwards;
+}
+
+.copyright {
+
+}
+
+.stats {
+
 }
